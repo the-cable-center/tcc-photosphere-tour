@@ -17,8 +17,8 @@ Module.expectedDataFileDownloads++;
     } else {
       throw 'using preloaded data can only be done on a web page or in a web worker';
     }
-    var PACKAGE_NAME = 'VR CableCenter Test[2].data';
-    var REMOTE_PACKAGE_BASE = 'VR CableCenter Test[2].data';
+    var PACKAGE_NAME = 'VR CableCenter Test[3.2].data';
+    var REMOTE_PACKAGE_BASE = 'VR CableCenter Test[3.2].data';
     if (typeof Module['locateFilePackage'] === 'function' && !Module['locateFile']) {
       Module['locateFile'] = Module['locateFilePackage'];
       Module.printErr('warning: you defined Module.locateFilePackage, that has been renamed to Module.locateFile (using your locateFilePackage for now)');
@@ -26,8 +26,8 @@ Module.expectedDataFileDownloads++;
     var REMOTE_PACKAGE_NAME = typeof Module['locateFile'] === 'function' ?
                               Module['locateFile'](REMOTE_PACKAGE_BASE) :
                               ((Module['filePackagePrefixURL'] || '') + REMOTE_PACKAGE_BASE);
-    var REMOTE_PACKAGE_SIZE = 15018321;
-    var PACKAGE_UUID = '42ef6ca1-bbab-4e70-9a90-8f7d3a00e0d0';
+    var REMOTE_PACKAGE_SIZE = 82326009;
+    var PACKAGE_UUID = '06984398-3bc5-4b60-b693-bd0291d83b8f';
   
     function fetchRemotePackage(packageName, packageSize, callback, errback) {
       var xhr = new XMLHttpRequest();
@@ -125,12 +125,12 @@ Module['FS_createPath']('/', 'Resources', true, true);
         this.requests[this.name] = null;
       },
     };
-      new DataRequest(0, 161180, 0, 0).open('GET', '/mainData');
-    new DataRequest(161180, 161201, 0, 0).open('GET', '/methods_pointedto_by_uievents.xml');
-    new DataRequest(161201, 165401, 0, 0).open('GET', '/resources.assets');
-    new DataRequest(165401, 12942809, 0, 0).open('GET', '/sharedassets0.assets');
-    new DataRequest(12942809, 14517845, 0, 0).open('GET', '/Resources/unity_default_resources');
-    new DataRequest(14517845, 15018321, 0, 0).open('GET', '/Resources/unity_builtin_extra');
+      new DataRequest(0, 165688, 0, 0).open('GET', '/mainData');
+    new DataRequest(165688, 165709, 0, 0).open('GET', '/methods_pointedto_by_uievents.xml');
+    new DataRequest(165709, 169909, 0, 0).open('GET', '/resources.assets');
+    new DataRequest(169909, 80250497, 0, 0).open('GET', '/sharedassets0.assets');
+    new DataRequest(80250497, 81825533, 0, 0).open('GET', '/Resources/unity_default_resources');
+    new DataRequest(81825533, 82326009, 0, 0).open('GET', '/Resources/unity_builtin_extra');
 
     function processPackageData(arrayBuffer) {
       Module.finishedDataFileDownloads++;
@@ -146,10 +146,10 @@ Module['FS_createPath']('/', 'Resources', true, true);
           DataRequest.prototype.requests["/sharedassets0.assets"].onload();
           DataRequest.prototype.requests["/Resources/unity_default_resources"].onload();
           DataRequest.prototype.requests["/Resources/unity_builtin_extra"].onload();
-          Module['removeRunDependency']('datafile_VR CableCenter Test[2].data');
+          Module['removeRunDependency']('datafile_VR CableCenter Test[3.2].data');
 
     };
-    Module['addRunDependency']('datafile_VR CableCenter Test[2].data');
+    Module['addRunDependency']('datafile_VR CableCenter Test[3.2].data');
   
     if (!Module.preloadResults) Module.preloadResults = {};
   
