@@ -26,9 +26,11 @@ GameObject:
   m_Component:
   - 4: {fileID: 495652}
   - 114: {fileID: 11441950}
+  - 64: {fileID: 6465652}
+  - 135: {fileID: 13505454}
   m_Layer: 0
   m_Name: modem
-  m_TagString: Untagged
+  m_TagString: ArchiveModel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51,9 +53,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 155800}
-  m_LocalRotation: {x: -.0483369902, y: -.191783711, z: -.0041088406, w: .980237603}
-  m_LocalPosition: {x: -94.284584, y: -99.990097, z: -.238081291}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 428340}
   m_Father: {fileID: 0}
@@ -90,6 +92,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 148256}
   m_Mesh: {fileID: 4300000, guid: 0d9b8937b2261614eadcadbde096481f, type: 3}
+--- !u!64 &6465652
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 155800}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Convex: 1
+  m_Mesh: {fileID: 4300000, guid: 0d9b8937b2261614eadcadbde096481f, type: 3}
 --- !u!114 &11441950
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -102,6 +116,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotateVel: 3
+--- !u!135 &13505454
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 155800}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: .219999999
+  m_Center: {x: -.0599999987, y: -.119999997, z: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

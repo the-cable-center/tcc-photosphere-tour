@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - ghStairs
+  - ArchiveModel
+  - vrMouse
   layers:
   - Default
   - TransparentFX
