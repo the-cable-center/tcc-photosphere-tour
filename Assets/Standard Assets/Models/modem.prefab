@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22cd2f73d76701d47b66639cd98528bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateVel: 3
+  passiveRotateVel: 3
 --- !u!135 &13505454
 SphereCollider:
   m_ObjectHideFlags: 1
