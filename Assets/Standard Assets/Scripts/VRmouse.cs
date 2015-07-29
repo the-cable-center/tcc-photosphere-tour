@@ -10,6 +10,8 @@ public class VRmouse : MonoBehaviour
 	{
 		Click ();
 		Hover ();
+
+
 	}
 
 	void Click ()
@@ -32,7 +34,7 @@ public class VRmouse : MonoBehaviour
 
 		Debug.DrawRay (transform.position, transform.forward, Color.red);
 		if (Physics.Raycast(hov, out hoverHit, 65f)){
-			print ("Click_Object Found!");
+			print ("Hover_Object Found!");
 		}
 	}
 }

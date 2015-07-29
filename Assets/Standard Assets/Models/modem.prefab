@@ -26,7 +26,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 495652}
   - 114: {fileID: 11441950}
-  - 64: {fileID: 6465652}
   - 135: {fileID: 13505454}
   m_Layer: 0
   m_Name: modem
@@ -92,18 +91,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 148256}
   m_Mesh: {fileID: 4300000, guid: 0d9b8937b2261614eadcadbde096481f, type: 3}
---- !u!64 &6465652
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 155800}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Convex: 1
-  m_Mesh: {fileID: 4300000, guid: 0d9b8937b2261614eadcadbde096481f, type: 3}
 --- !u!114 &11441950
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -123,7 +110,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 155800}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: .219999999
