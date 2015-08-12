@@ -24,6 +24,16 @@ public class PanoController : MonoBehaviour
     private Vector3 thtrStg = new Vector3(200, 0, 200);
 
     //transfer bools
+    private bool gHall = false;
+    private bool gHallStairs = false;
+    private bool secFlrMez = false;
+    private bool thrdFlrMez = false;
+    private bool CHOF = false;
+    private bool bLib = false;
+    private bool archv = false;
+    private bool hubLng = false;
+    private bool theatreMez = false;
+    private bool theatreStg = false;
 
 
     // Use this for initialization
@@ -54,12 +64,13 @@ public class PanoController : MonoBehaviour
         {
             StartTimer = true;
             transitionSphr.GetComponent<PanoTransition>().upScale = true;
-            toGH();
+            gHall = true;
         }
-        else if (panoTimer >= transitionTime)
+        else if (panoTimer >= transitionTime && gHall == true)
         {
-            //toGH();
+            toGH();
             StartTimer = false;
+            gHall = false;
             panoTimer = 0;
         }
 
@@ -68,11 +79,13 @@ public class PanoController : MonoBehaviour
         {
             StartTimer = true;
             transitionSphr.GetComponent<PanoTransition>().upScale = true;
+            gHallStairs = true;
         }
-        else if (panoTimer >= transitionTime)
+        else if (panoTimer >= transitionTime && gHallStairs == true)
         {
-            //toGHstairs();
+            toGHstairs();
             StartTimer = false;
+            gHallStairs = false;
             panoTimer = 0;
         }
 
@@ -81,11 +94,13 @@ public class PanoController : MonoBehaviour
         {
             StartTimer = true;
             transitionSphr.GetComponent<PanoTransition>().upScale = true;
+            CHOF = true;
         }
-        else if (panoTimer >= transitionTime)
+        else if (panoTimer >= transitionTime && CHOF == true)
         {
-            //toCHOF();
+            toCHOF();
             StartTimer = false;
+            CHOF = false;
             panoTimer = 0;
         }
 
@@ -94,11 +109,13 @@ public class PanoController : MonoBehaviour
         {
             StartTimer = true;
             transitionSphr.GetComponent<PanoTransition>().upScale = true;
+            bLib = true;
         }
-        else if (panoTimer >= transitionTime)
+        else if (panoTimer >= transitionTime && bLib == true)
         {
-            //toBarcoLib();
+            toBarcoLib();
             StartTimer = false;
+            bLib = false;
             panoTimer = 0;
         }
 
@@ -107,11 +124,13 @@ public class PanoController : MonoBehaviour
         {
             StartTimer = true;
             transitionSphr.GetComponent<PanoTransition>().upScale = true;
+            secFlrMez = true;
         }
-        else if (panoTimer >= transitionTime)
+        else if (panoTimer >= transitionTime && secFlrMez == true)
         {
-            //toScndflrMez();
+            toScndflrMez();
             StartTimer = false;
+            secFlrMez = false;  
             panoTimer = 0;
         }
 
@@ -120,11 +139,13 @@ public class PanoController : MonoBehaviour
         {
             StartTimer = true;
             transitionSphr.GetComponent<PanoTransition>().upScale = true;
+            thrdFlrMez = true;
         }
-        else if (panoTimer >= transitionTime)
+        else if (panoTimer >= transitionTime && thrdFlrMez == true)
         {
-            //toThrdflrMez();
+            toThrdflrMez();
             StartTimer = false;
+            thrdFlrMez = false;
             panoTimer = 0;
         }
 
@@ -133,12 +154,15 @@ public class PanoController : MonoBehaviour
         {
             StartTimer = true;
             transitionSphr.GetComponent<PanoTransition>().upScale = true;
+            archv = true;
         }
-        else if (panoTimer >= transitionTime)
+        else if (panoTimer >= transitionTime && archv == true)
         {
-            //toArchives();
+            toArchives();
             StartTimer = false;
+            archv = false;
             panoTimer = 0;
+
         }
 
         //go to hub lounge
@@ -146,11 +170,13 @@ public class PanoController : MonoBehaviour
         {
             StartTimer = true;
             transitionSphr.GetComponent<PanoTransition>().upScale = true;
+            hubLng = true;
         }
-        else if (panoTimer >= transitionTime)
+        else if (panoTimer >= transitionTime && hubLng == true)
         {
-            //toHub();
+            toHub();
             StartTimer = false;
+            hubLng = false;
             panoTimer = 0;
         }
 
@@ -159,11 +185,13 @@ public class PanoController : MonoBehaviour
         {
             StartTimer = true;
             transitionSphr.GetComponent<PanoTransition>().upScale = true;
+            theatreMez = true;
         }
-        else if (panoTimer >= transitionTime)
+        else if (panoTimer >= transitionTime && theatreMez == true)
         {
-            //toThtrMez();
+            toThtrMez();
             StartTimer = false;
+            theatreMez = false;
             panoTimer = 0;
         }
 
@@ -172,11 +200,13 @@ public class PanoController : MonoBehaviour
         {
             StartTimer = true;
             transitionSphr.GetComponent<PanoTransition>().upScale = true;
+            theatreStg = true;
         }
-        else if (panoTimer >= transitionTime)
+        else if (panoTimer >= transitionTime && theatreStg == true)
         {
-            //toThtrStg();
+            toThtrStg();
             StartTimer = false;
+            theatreStg = false;
             panoTimer = 0;
         }
     }
