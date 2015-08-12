@@ -8,7 +8,7 @@ public class CamStop : MonoBehaviour
 
     public GameObject player;
     public Camera main;
-    
+
 
     void Start()
     {
@@ -26,10 +26,10 @@ public class CamStop : MonoBehaviour
         {
             if (archvObj.GetComponent<ObjRotation>().isDragging)
             {
-                player.GetComponent<MouseLook>().enabled = true;
-                main.GetComponent<MouseLook>().enabled = true;
+                archvObj.GetComponent<ObjRotation>().isDragging = false;
             }
-            
+            player.GetComponent<MouseLook>().enabled = true;
+            main.GetComponent<MouseLook>().enabled = true;
         }
     }
 }
