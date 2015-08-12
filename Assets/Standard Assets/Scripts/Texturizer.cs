@@ -5,7 +5,7 @@ public class Texturizer : MonoBehaviour
 {
 
     //assigning texture locations to string
-    string archives = "https://lh5.googleusercontent.com/lXVp_Qqnc-EM8ds-06yQkWGaw8apzt3cEz2mqvJXsM0UH7Wnt75hUGaP6KU9SG5fSqT-wRgCry1U158=w1886-h868";
+    string archives = "file:///C:/Users/nvandessel/_Unity/WebGL/Assets/Standard%20Assets/Sprites/Photospheres/archives.jpg";
     string greatHall = "file:///C:/Users/nvandessel/_Unity/WebGL/Assets/Standard%20Assets/Sprites/Photospheres/greathall.jpg";
     string greatHallStairs = "file:///C:/Users/nvandessel/_Unity/WebGL/Assets/Standard%20Assets/Sprites/Photospheres/greathallstairs.jpg";
     string CableHOF = "file:///C:/Users/nvandessel/_Unity/WebGL/Assets/Standard%20Assets/Sprites/Photospheres/chof.jpg";
@@ -173,5 +173,5 @@ public class Texturizer : MonoBehaviour
             Debug.Log("WWW.hubLnge Error: " + hubLnge.error);
         }
     }
-    
+
 }

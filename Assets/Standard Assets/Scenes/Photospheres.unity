@@ -552,14 +552,14 @@ GameObject:
   - 4: {fileID: 877122809}
   - 33: {fileID: 877122813}
   - 23: {fileID: 877122811}
-  - 114: {fileID: 877122814}
+  - 114: {fileID: 877122810}
   m_Layer: 0
   m_Name: transitionSphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &877122809
 Transform:
   m_ObjectHideFlags: 0
@@ -568,10 +568,27 @@ Transform:
   m_GameObject: {fileID: 877122808}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .0500000007, y: .0500000007, z: .0500000007}
+  m_LocalScale: {x: .100000001, y: .100000001, z: .100000001}
   m_Children: []
   m_Father: {fileID: 1301781212}
   m_RootOrder: 1
+--- !u!114 &877122810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 877122808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfc73bf906b28a1479f97262256381a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plyr: {fileID: 1301781207}
+  maxScale: .100000001
+  minScale: 0
+  scaleSpeed: 1
+  downScale: 0
+  upScale: 0
 --- !u!23 &877122811
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -603,104 +620,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 877122808}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &877122814
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 877122808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d0390bd8b8ffd640b34fe25065ff1df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hasOnStart: 0
-  hasOnPlay: 0
-  hasOnUpdate: 0
-  hasOnStepComplete: 0
-  hasOnComplete: 0
-  onStart:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  onPlay:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  onUpdate:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  onStepComplete:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  onComplete:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  delay: 1
-  duration: 3
-  easeType: 33
-  easeCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  loopType: 1
-  loops: -1
-  id: SphereScale
-  isRelative: 0
-  isFrom: 1
-  isIndependentUpdate: 1
-  autoKill: 0
-  isActive: 1
-  isValid: 1
-  target: {fileID: 877122809}
-  animationType: 5
-  autoPlay: 0
-  endValueFloat: 0
-  endValueV3: {x: 0, y: 0, z: 0}
-  endValueColor: {r: 1, g: 1, b: 1, a: 1}
-  endValueString: 
-  endValueRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  optionalBool0: 1
-  optionalFloat0: 0
-  optionalInt0: 0
-  optionalRotationMode: 0
-  optionalScrambleMode: 0
-  optionalString: 
 --- !u!1 &1113297674
 GameObject:
   m_ObjectHideFlags: 0
@@ -1009,6 +928,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionSphr: {fileID: 877122808}
+  transitionTime: 3
+  panoTimer: 0
 --- !u!114 &1301781214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1027,55 +948,6 @@ MonoBehaviour:
   maximumX: 360
   minimumY: -60
   maximumY: 60
---- !u!1 &1343469504
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1343469505}
-  - 114: {fileID: 1343469506}
-  m_Layer: 0
-  m_Name: TexturizerScriptObj
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1343469505
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1343469504}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1973473163}
-  m_RootOrder: 0
---- !u!114 &1343469506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1343469504}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87ca7adde254ae54eafa98683a4d836f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sph_Archive: {fileID: 2041528041}
-  sph_gHall: {fileID: 2036398266}
-  sph_gHallStrs: {fileID: 1762516139}
-  sph_chof: {fileID: 1426496365}
-  sph_barcoLib: {fileID: 497684775}
-  sph_secFlrMez: {fileID: 1725990931}
-  sph_thrdFlrMez: {fileID: 1543204454}
-  sph_theatreStg: {fileID: 2068405743}
-  sph_theatreMez: {fileID: 1113297674}
-  sph_HubLounge: {fileID: 1900352550}
 --- !u!4 &1419393257 stripped
 Transform:
   m_PrefabParentObject: {fileID: 495652, guid: 3366498f568e21f49a63cd5e2aa22cf8, type: 2}
@@ -1638,9 +1510,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -92.0101242, y: -105.589996, z: -.132130012}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1343469505}
-  - {fileID: 2033425850}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
 --- !u!114 &1973473164
@@ -1730,45 +1600,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3366498f568e21f49a63cd5e2aa22cf8, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &2033425849
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 2033425850}
-  - 114: {fileID: 2033425851}
-  m_Layer: 0
-  m_Name: CursorScriptObj
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &2033425850
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2033425849}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1973473163}
-  m_RootOrder: 1
---- !u!114 &2033425851
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2033425849}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51cca4832dcf8794cac7ea228abbe9c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2036398266
 GameObject:
   m_ObjectHideFlags: 0
