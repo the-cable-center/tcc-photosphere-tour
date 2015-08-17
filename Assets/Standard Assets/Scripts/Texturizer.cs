@@ -3,18 +3,19 @@ using System.Collections;
 
 public class Texturizer : MonoBehaviour
 {
+    public GameObject transitionSphr;
 
     //assigning texture locations to string
-    string archives = "file:///C:/Users/nvandessel/_Unity/WebGL/Assets/Standard%20Assets/Sprites/Photospheres/archives.jpg";
-    string greatHall = "file:///C:/Users/nvandessel/_Unity/WebGL/Assets/Standard%20Assets/Sprites/Photospheres/greathall.jpg";
-    string greatHallStairs = "file:///C:/Users/nvandessel/_Unity/WebGL/Assets/Standard%20Assets/Sprites/Photospheres/greathallstairs.jpg";
-    string CableHOF = "file:///C:/Users/nvandessel/_Unity/WebGL/Assets/Standard%20Assets/Sprites/Photospheres/chof.jpg";
-    string barcoLibrary = "file:///C:/Users/nvandessel/_Unity/WebGL/Assets/Standard%20Assets/Sprites/Photospheres/barcolibrary.jpg";
-    string secFloorMez = "file:///C:/Users/nvandessel/_Unity/WebGL/Assets/Standard%20Assets/Sprites/Photospheres/secondfloorwindowrampgreathall.jpg";
-    string thrdFloorMez = "file:///C:/Users/nvandessel/_Unity/WebGL/Assets/Standard%20Assets/Sprites/Photospheres/thirdfloor.jpg";
-    string theatreMez = "file:///C:/Users/nvandessel/_Unity/WebGL/Assets/Standard%20Assets/Sprites/Photospheres/malonetheater.jpg";
+    string archives = "farm1.staticflickr.com/740/20035140704_f7bd601cf7_o_d.jpg";
+    string greatHall = "farm1.staticflickr.com/655/20648504172_46f7c716c9_o_d.jpg";
+    string greatHallStairs = "farm1.staticflickr.com/705/20470954679_6fdb53c753_o_d.jpg";
+    string CableHOF = "farm1.staticflickr.com/770/20657697125_2296e52091_o_d.jpg";
+    string barcoLibrary = "farm1.staticflickr.com/735/20470956039_a9ce4371d3_o_d.jpg";
+    string secFloorMez = "farm1.staticflickr.com/777/20469692740_b8bbae72cd_o_d.jpg";
+    string thrdFloorMez = "farm6.staticflickr.com/5640/20035138504_739dd2dbec_o_d.jpg";
+    string theatreMez = "farm1.staticflickr.com/635/20470954379_2279fa017f_o_d.jpg";
     string theatreStg = "";
-    string hubLounge = "file:///C:/Users/nvandessel/_Unity/WebGL/Assets/Standard%20Assets/Sprites/Photospheres/hublounge.jpg";
+    string hubLounge = "farm6.staticflickr.com/5703/20648503922_1773d1ff77_o_d.jpg";
 
 
     //creating objs to reference in script
@@ -61,6 +62,8 @@ public class Texturizer : MonoBehaviour
         yield return thtrMez;
         yield return thtrStg;
         yield return hubLnge;
+
+        transitionSphr.GetComponent<PanoTransition>().downScale = true;
 
         //check for errors - if none apply texture
         //archives

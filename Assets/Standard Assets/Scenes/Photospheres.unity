@@ -1548,6 +1548,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87ca7adde254ae54eafa98683a4d836f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  transitionSphr: {fileID: 877122808}
   sph_Archive: {fileID: 2041528041}
   sph_gHall: {fileID: 2036398266}
   sph_gHallStrs: {fileID: 1762516139}

@@ -23,7 +23,7 @@ public class PanoTransition : MonoBehaviour
         v1 = gameObject.transform.localScale;
         v2 = v3Scale;
 
-        downScale = true;
+        //downScale = true;
     }
 
     // Update is called once per frame
@@ -76,8 +76,10 @@ public class PanoTransition : MonoBehaviour
         if (dif <= 0.0001f && plyr.GetComponent<PanoController>().panoTimer >= 0.5f)
         {
             upScale = false;
-            downScale = true;
             dif = 0f;
+            downScale = true;
         }
     }
 }
+
+
