@@ -1991,7 +1991,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RotationList:
-  - {x: 0, y: 0, z: 0}
   - {x: 0, y: 45, z: 0}
   - {x: 0, y: 90, z: 0}
   - {x: 0, y: 135, z: 0}
@@ -1999,6 +1998,7 @@ MonoBehaviour:
   - {x: 0, y: 225, z: 0}
   - {x: 0, y: 270, z: 0}
   - {x: 0, y: 315, z: 0}
+  - {x: 0, y: 0, z: 0}
 --- !u!1 &1973473162
 GameObject:
   m_ObjectHideFlags: 0

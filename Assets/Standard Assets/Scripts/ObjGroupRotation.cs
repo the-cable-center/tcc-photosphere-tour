@@ -4,18 +4,6 @@ using UnityEngine;
 public class ObjGroupRotation : MonoBehaviour
 {
 
-    //    private static Quaternion[] rotationVector3s =
-    //    {
-    //        Quaternion.Euler(0, 0, 0),
-    //        Quaternion.Euler(0,45,0),
-    //        Quaternion.Euler(0,90,0),
-    //        Quaternion.Euler(0,135,0),
-    //        Quaternion.Euler(0,180,0),
-    //        Quaternion.Euler(0,225,0),
-    //        Quaternion.Euler(0,270,0),
-    //        Quaternion.Euler(0,315,0)
-    //    };
-
     public List<Vector3> RotationList;
 
     private bool _nextObj;
@@ -48,25 +36,50 @@ public class ObjGroupRotation : MonoBehaviour
 
     public void Next()
     {
-        if (_nextObj == true)
+        if (_nextObj)
         {
             gameObject.GetComponent<Transform>().eulerAngles = RotationList[_curIndex];
 
-            if (_curIndex < _listMax)
+
+            if (_curIndex <= _listMax)
             {
-                _curIndex = _curIndex + 1;
-                _curRotation = RotationList[_curIndex];
+                if (_curIndex + 1 != _listMax && _curIndex != _listMax)
+                {
+                    _curIndex = _curIndex + 1;
+                    _curRotation = RotationList[_curIndex];
+                }
+                else if (_curIndex >= _listMax - 1)
+                {
+                    _curIndex = 0 + 1;
+                }
+
             }
-            else if (_curIndex >= _listMax)
-            {
-                _curIndex = 0;
-            }
+
+            print("NEXT - curIndex: " + _curIndex + ", listMax: " + _listMax);
             _nextObj = false;
         }
     }
 
     public void Back()
     {
+        if (_prevObj)
+        {
+            gameObject.GetComponent<Transform>().eulerAngles = RotationList[_curIndex];
 
+            if (_curIndex <= _listMax)
+            {
+                if (_curIndex - 1 != 0 && _curIndex != 0)
+                {
+                    _curIndex = _curIndex - 1;
+                    _curRotation = RotationList[_curIndex];
+                }
+                else if (_curIndex <= 1)
+                {
+                    _curIndex = _listMax - 1;
+                }
+            }
+            print("BACK - curIndex: " + _curIndex + ", listMax: " + _listMax);
+            _prevObj = false;
+        }
     }
 }
