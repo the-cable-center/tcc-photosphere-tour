@@ -1,14 +1,13 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class ObjRotation : MonoBehaviour
 {
 
-    public float rotationSpeed = 10f;
-    public float lerpSpeed = 1f;
+    public float RotationSpeed = 10f;
+    public float LerpSpeed = 1f;
 
-    private Vector3 theSpeed;
-    private Vector3 avgSpeed;
+    private Vector3 _theSpeed;
+    private Vector3 _avgSpeed;
     public bool isDragging;
 
     // Use this for initialization
@@ -27,22 +26,22 @@ public class ObjRotation : MonoBehaviour
     {
         if (Input.GetMouseButton(0) && isDragging)
         {
-            theSpeed = new Vector3(-Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"), 0.0F);
-            avgSpeed = Vector3.Lerp(avgSpeed, theSpeed, Time.deltaTime * 5);
+            _theSpeed = new Vector3(-Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"), 0.0F);
+            _avgSpeed = Vector3.Lerp(_avgSpeed, _theSpeed, Time.deltaTime * 5);
         }
         else
         {
             if (isDragging)
             {
-                theSpeed = avgSpeed;
+                _theSpeed = _avgSpeed;
                 isDragging = false;
             }
 
-            float i = Time.deltaTime * lerpSpeed;
-            theSpeed = Vector3.Lerp(theSpeed, Vector3.zero, i);
+            float i = Time.deltaTime * LerpSpeed;
+            _theSpeed = Vector3.Lerp(_theSpeed, Vector3.zero, i);
         }
-        transform.Rotate(Camera.main.transform.up * theSpeed.x * rotationSpeed, Space.Self);
-        transform.Rotate(Camera.main.transform.right * theSpeed.y * rotationSpeed, Space.World);
+        transform.Rotate(Camera.main.transform.up * _theSpeed.x * RotationSpeed, Space.Self);
+        transform.Rotate(Camera.main.transform.right * _theSpeed.y * RotationSpeed, Space.World);
     }
 
 }
