@@ -161,6 +161,48 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!1001 &71971792
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1973085720}
+    m_Modifications:
+    - target: {fileID: 400002, guid: 826e701552179e04bb4389bb00bfa7d1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -.800000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 826e701552179e04bb4389bb00bfa7d1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 826e701552179e04bb4389bb00bfa7d1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 826e701552179e04bb4389bb00bfa7d1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 826e701552179e04bb4389bb00bfa7d1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 826e701552179e04bb4389bb00bfa7d1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 826e701552179e04bb4389bb00bfa7d1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 826e701552179e04bb4389bb00bfa7d1, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 826e701552179e04bb4389bb00bfa7d1, type: 3}
+  m_IsPrefabParent: 0
 --- !u!1 &113186944
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,7 +269,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 495652, guid: 3366498f568e21f49a63cd5e2aa22cf8, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 495652, guid: 3366498f568e21f49a63cd5e2aa22cf8, type: 2}
       propertyPath: m_LocalScale.x
@@ -427,6 +469,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf2493a1a8d160418c9e98c04ddac0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &487533027 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400002, guid: 826e701552179e04bb4389bb00bfa7d1, type: 3}
+  m_PrefabInternal: {fileID: 71971792}
 --- !u!1 &497684775
 GameObject:
   m_ObjectHideFlags: 0
@@ -916,7 +962,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 495652, guid: 3366498f568e21f49a63cd5e2aa22cf8, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 495652, guid: 3366498f568e21f49a63cd5e2aa22cf8, type: 2}
       propertyPath: m_LocalScale.x
@@ -1620,7 +1666,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 495652, guid: 3366498f568e21f49a63cd5e2aa22cf8, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3366498f568e21f49a63cd5e2aa22cf8, type: 2}
@@ -1853,7 +1899,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 495652, guid: 3366498f568e21f49a63cd5e2aa22cf8, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 495652, guid: 3366498f568e21f49a63cd5e2aa22cf8, type: 2}
       propertyPath: m_LocalScale.x
@@ -1973,6 +2019,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 487533027}
   - {fileID: 241161396}
   - {fileID: 1614320704}
   - {fileID: 565326000}
@@ -1991,14 +2038,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RotationList:
-  - {x: 0, y: 45, z: 0}
   - {x: 0, y: 90, z: 0}
-  - {x: 0, y: 135, z: 0}
   - {x: 0, y: 180, z: 0}
-  - {x: 0, y: 225, z: 0}
   - {x: 0, y: 270, z: 0}
-  - {x: 0, y: 315, z: 0}
   - {x: 0, y: 0, z: 0}
+  LerpSpeed: 5
 --- !u!1 &1973473162
 GameObject:
   m_ObjectHideFlags: 0
