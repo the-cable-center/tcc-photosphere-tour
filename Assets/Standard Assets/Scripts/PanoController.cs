@@ -90,110 +90,69 @@ public class PanoController : MonoBehaviour
         }
 
         //go to barco library
-        if (Input.GetKey(KeyCode.Keypad3))
+        if (_bLib)
         {
-            StartTimer = true;
-            transitionSphr.GetComponent<PanoTransition>().upScale = true;
-            _bLib = true;
-        }
-        else if (panoTimer >= transitionTime && _bLib == true)
-        {
-            toBarcoLib();
+            transform.position = barcolib;
             StartTimer = false;
             _bLib = false;
             panoTimer = 0;
         }
 
         //go to second floor mez
-        if (Input.GetKey(KeyCode.Keypad4))
+        if (_secFlrMez)
         {
-            StartTimer = true;
-            transitionSphr.GetComponent<PanoTransition>().upScale = true;
-            _secFlrMez = true;
-        }
-        else if (panoTimer >= transitionTime && _secFlrMez == true)
-        {
-            toScndflrMez();
+            transform.position = scndflrMez;
             StartTimer = false;
             _secFlrMez = false;
             panoTimer = 0;
         }
 
         //got to third floor mez
-        if (Input.GetKey(KeyCode.Keypad5))
+        if (_thrdFlrMez)
         {
-            StartTimer = true;
-            transitionSphr.GetComponent<PanoTransition>().upScale = true;
-            _thrdFlrMez = true;
-        }
-        else if (panoTimer >= transitionTime && _thrdFlrMez == true)
-        {
-            toThrdflrMez();
+            transform.position = thrdflrMez;
             StartTimer = false;
             _thrdFlrMez = false;
             panoTimer = 0;
         }
 
         //go to archives
-        if (Input.GetKey(KeyCode.Keypad6))
+        if (_archv)
         {
-            StartTimer = true;
-            transitionSphr.GetComponent<PanoTransition>().upScale = true;
-            _archv = true;
-        }
-        else if (panoTimer >= transitionTime && _archv == true)
-        {
-            toArchives();
+            transform.position = archives;
             StartTimer = false;
             _archv = false;
             panoTimer = 0;
-
         }
 
         //go to hub lounge
-        if (Input.GetKey(KeyCode.Keypad7))
+        if (_hubLng)
         {
-            StartTimer = true;
-            transitionSphr.GetComponent<PanoTransition>().upScale = true;
-            _hubLng = true;
-        }
-        else if (panoTimer >= transitionTime && _hubLng == true)
-        {
-            toHub();
+            transform.position = hub;
             StartTimer = false;
             _hubLng = false;
             panoTimer = 0;
         }
 
         //go to theatre mez
-        if (Input.GetKey(KeyCode.Keypad8))
+        if (_theatreMez)
         {
-            StartTimer = true;
-            transitionSphr.GetComponent<PanoTransition>().upScale = true;
-            _theatreMez = true;
-        }
-        else if (panoTimer >= transitionTime && _theatreMez == true)
-        {
-            toThtrMez();
+            transform.position = thtrMez;
             StartTimer = false;
             _theatreMez = false;
             panoTimer = 0;
         }
 
         //go to theatre stage
-        if (Input.GetKey(KeyCode.Keypad9))
+        if (_theatreStg)
         {
-            StartTimer = true;
-            transitionSphr.GetComponent<PanoTransition>().upScale = true;
-            _theatreStg = true;
-        }
-        else if (panoTimer >= transitionTime && _theatreStg == true)
-        {
-            toThtrStg();
+            transform.position = thtrStg;
             StartTimer = false;
             _theatreStg = false;
             panoTimer = 0;
+
         }
+
     }
 
 
@@ -220,37 +179,51 @@ public class PanoController : MonoBehaviour
 
     public void toBarcoLib()
     {
-        transform.position = barcolib;
+        StartTimer = true;
+        transitionSphr.GetComponent<PanoTransition>().upScale = true;
+        _bLib = true;
     }
 
     public void toScndflrMez()
     {
-        transform.position = scndflrMez;
+        StartTimer = true;
+        transitionSphr.GetComponent<PanoTransition>().upScale = true;
+        _secFlrMez = true;
     }
 
     public void toThrdflrMez()
     {
-        transform.position = thrdflrMez;
+        StartTimer = true;
+        transitionSphr.GetComponent<PanoTransition>().upScale = true;
+        _thrdFlrMez = true;
     }
 
     public void toArchives()
     {
-        transform.position = archives;
+        StartTimer = true;
+        transitionSphr.GetComponent<PanoTransition>().upScale = true;
+        _archv = true;
     }
 
     public void toHub()
     {
-        transform.position = hub;
+        StartTimer = true;
+        transitionSphr.GetComponent<PanoTransition>().upScale = true;
+        _hubLng = true;
     }
 
     public void toThtrMez()
     {
-        transform.position = thtrMez;
+        StartTimer = true;
+        transitionSphr.GetComponent<PanoTransition>().upScale = true;
+        _theatreMez = true;
     }
 
     public void toThtrStg()
     {
-        transform.position = thtrStg;
+        StartTimer = true;
+        transitionSphr.GetComponent<PanoTransition>().upScale = true;
+        _theatreStg = true;
     }
 
 }
