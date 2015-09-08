@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using System.Collections;
 
 public class Texturizer : MonoBehaviour
@@ -6,16 +7,16 @@ public class Texturizer : MonoBehaviour
     public GameObject transitionSphr;
 
     //assigning texture locations to string
-    string archives = "farm1.staticflickr.com/740/20035140704_f7bd601cf7_o_d.jpg";
-    string greatHall = "farm1.staticflickr.com/655/20648504172_46f7c716c9_o_d.jpg";
-    string greatHallStairs = "farm1.staticflickr.com/705/20470954679_6fdb53c753_o_d.jpg";
-    string CableHOF = "farm1.staticflickr.com/770/20657697125_2296e52091_o_d.jpg";
-    string barcoLibrary = "farm1.staticflickr.com/735/20470956039_a9ce4371d3_o_d.jpg";
-    string secFloorMez = "farm1.staticflickr.com/777/20469692740_b8bbae72cd_o_d.jpg";
-    string thrdFloorMez = "farm6.staticflickr.com/5640/20035138504_739dd2dbec_o_d.jpg";
-    string theatreMez = "farm1.staticflickr.com/635/20470954379_2279fa017f_o_d.jpg";
-    string theatreStg = "";
-    string hubLounge = "farm6.staticflickr.com/5703/20648503922_1773d1ff77_o_d.jpg";
+    string _archives = "farm1.staticflickr.com/740/20035140704_f7bd601cf7_o_d.jpg";
+    string _greatHall = "farm1.staticflickr.com/655/20648504172_46f7c716c9_o_d.jpg";
+    string _greatHallStairs = "farm1.staticflickr.com/705/20470954679_6fdb53c753_o_d.jpg";
+    string _cableHof = "farm1.staticflickr.com/770/20657697125_2296e52091_o_d.jpg";
+    string _barcoLibrary = "farm1.staticflickr.com/735/20470956039_a9ce4371d3_o_d.jpg";
+    string _secFloorMez = "farm1.staticflickr.com/777/20469692740_b8bbae72cd_o_d.jpg";
+    string _thrdFloorMez = "farm6.staticflickr.com/5640/20035138504_739dd2dbec_o_d.jpg";
+    string _theatreMez = "farm1.staticflickr.com/635/20470954379_2279fa017f_o_d.jpg";
+    string _theatreStg = "";
+    string _hubLounge = "farm6.staticflickr.com/5703/20648503922_1773d1ff77_o_d.jpg";
 
 
     //creating objs to reference in script
@@ -35,16 +36,16 @@ public class Texturizer : MonoBehaviour
     void Start()
     {
         //starts download of given URL
-        WWW archv = new WWW(archives);
-        WWW gHall = new WWW(greatHall);
-        WWW gHallStrs = new WWW(greatHallStairs);
-        WWW chof = new WWW(CableHOF);
-        WWW barco = new WWW(barcoLibrary);
-        WWW secFlrMez = new WWW(secFloorMez);
-        WWW thrdFlrMez = new WWW(thrdFloorMez);
-        WWW thtrMez = new WWW(theatreMez);
-        WWW thtrStg = new WWW(theatreStg);
-        WWW hubLnge = new WWW(hubLounge);
+        WWW archv = new WWW(_archives);
+        WWW gHall = new WWW(_greatHall);
+        WWW gHallStrs = new WWW(_greatHallStairs);
+        WWW chof = new WWW(_cableHof);
+        WWW barco = new WWW(_barcoLibrary);
+        WWW secFlrMez = new WWW(_secFloorMez);
+        WWW thrdFlrMez = new WWW(_thrdFloorMez);
+        WWW thtrMez = new WWW(_theatreMez);
+        WWW thtrStg = new WWW(_theatreStg);
+        WWW hubLnge = new WWW(_hubLounge);
 
         StartCoroutine(WaitForRequest(archv, gHall, gHallStrs, chof, barco, secFlrMez, thrdFlrMez, thtrMez, thtrStg, hubLnge));
     }
