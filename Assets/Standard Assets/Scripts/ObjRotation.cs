@@ -24,6 +24,11 @@ public class ObjRotation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        //put everything below in its own function
+        //check tag of object script is attached too
+        //if tag = selected execute function
+
         if (Input.GetMouseButton(0) && isDragging)
         {
             _theSpeed = new Vector3(-Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"), 0.0F);

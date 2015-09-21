@@ -7,6 +7,8 @@ TagManager:
   - ghStairs
   - ArchiveModel
   - vrMouse
+  - NoTouchButton
+  - Selected
   layers:
   - Default
   - TransparentFX

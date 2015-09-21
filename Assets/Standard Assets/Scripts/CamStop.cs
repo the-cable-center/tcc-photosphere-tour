@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class CamStop : MonoBehaviour
 {
@@ -9,13 +8,17 @@ public class CamStop : MonoBehaviour
     public GameObject player;
     public Camera main;
 
-
-    void Start()
+    void Update()
     {
-        archvObj = GameObject.FindGameObjectWithTag("ArchiveModel");
+        archvObj = GameObject.FindGameObjectWithTag("Selected");
+
+        if (archvObj != null)
+        {
+            Check();
+        }
     }
 
-    void Update()
+    void Check()
     {
         if (Input.GetMouseButton(0) && archvObj.GetComponent<ObjRotation>().isDragging)
         {

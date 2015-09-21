@@ -10,7 +10,11 @@ public class ObjGroupRotation : MonoBehaviour
 
     private bool _nextObj;
     private bool _prevObj;
+<<<<<<< HEAD
     public int _listMax;
+=======
+    private int _listMax;
+>>>>>>> feature_ObjGroupingRig
     private int _curIndex;
     private Vector3 _curRotation;
     private Vector3 _prevRotation;
@@ -53,9 +57,15 @@ public class ObjGroupRotation : MonoBehaviour
                     _prevRotation = _curRotation;
                     _curRotation = RotationList[_curIndex];
                 }
+<<<<<<< HEAD
                 else if (_curIndex + 1 >= _listMax - 1)
                 {
                     _curIndex = 0;
+=======
+                else if (_curIndex >= _listMax - 1)
+                {
+                    _curIndex = 0 + 1;
+>>>>>>> feature_ObjGroupingRig
                 }
 
             }
@@ -78,13 +88,21 @@ public class ObjGroupRotation : MonoBehaviour
 
             if (_curIndex <= _listMax)
             {
+<<<<<<< HEAD
                 if (_curIndex - 1 != -1 && _curIndex != 0)
+=======
+                if (_curIndex - 1 != 0 && _curIndex != 0)
+>>>>>>> feature_ObjGroupingRig
                 {
                     _curIndex = _curIndex - 1;
                     _prevRotation = _curRotation;
                     _curRotation = RotationList[_curIndex];
                 }
+<<<<<<< HEAD
                 else if (_curIndex - 1 <= 0)
+=======
+                else if (_curIndex <= 1)
+>>>>>>> feature_ObjGroupingRig
                 {
                     _curIndex = _listMax - 1;
                 }

@@ -63,7 +63,17 @@ public class PanoController : MonoBehaviour
     void PanoSwitcher()
     {
         //go to great hall
+<<<<<<< HEAD
         if (_gHall)
+=======
+        if (Input.GetKey(KeyCode.Keypad0))
+        {
+            StartTimer = true;
+            transitionSphr.GetComponent<PanoTransition>().upScale = true;
+            _gHall = true;
+        }
+        else if (panoTimer >= transitionTime && _gHall == true)
+>>>>>>> feature_ObjGroupingRig
         {
             transform.position = gh;
             StartTimer = false;
@@ -72,7 +82,17 @@ public class PanoController : MonoBehaviour
         }
 
         //go to stairs
+<<<<<<< HEAD
         if (_gHallStairs)
+=======
+        if (Input.GetKey(KeyCode.Keypad1))
+        {
+            StartTimer = true;
+            transitionSphr.GetComponent<PanoTransition>().upScale = true;
+            _gHallStairs = true;
+        }
+        else if (panoTimer >= transitionTime && _gHallStairs == true)
+>>>>>>> feature_ObjGroupingRig
         {
             transform.position = ghStairs;
             StartTimer = false;
@@ -81,7 +101,17 @@ public class PanoController : MonoBehaviour
         }
 
         //go to chof
+<<<<<<< HEAD
         if (_chof)
+=======
+        if (Input.GetKey(KeyCode.Keypad2))
+        {
+            StartTimer = true;
+            transitionSphr.GetComponent<PanoTransition>().upScale = true;
+            _chof = true;
+        }
+        else if (panoTimer >= transitionTime && _chof == true)
+>>>>>>> feature_ObjGroupingRig
         {
             transform.position = chof;
             StartTimer = false;
@@ -90,7 +120,17 @@ public class PanoController : MonoBehaviour
         }
 
         //go to barco library
+<<<<<<< HEAD
         if (_bLib)
+=======
+        if (Input.GetKey(KeyCode.Keypad3))
+        {
+            StartTimer = true;
+            transitionSphr.GetComponent<PanoTransition>().upScale = true;
+            _bLib = true;
+        }
+        else if (panoTimer >= transitionTime && _bLib == true)
+>>>>>>> feature_ObjGroupingRig
         {
             transform.position = barcolib;
             StartTimer = false;
@@ -99,7 +139,17 @@ public class PanoController : MonoBehaviour
         }
 
         //go to second floor mez
+<<<<<<< HEAD
         if (_secFlrMez)
+=======
+        if (Input.GetKey(KeyCode.Keypad4))
+        {
+            StartTimer = true;
+            transitionSphr.GetComponent<PanoTransition>().upScale = true;
+            _secFlrMez = true;
+        }
+        else if (panoTimer >= transitionTime && _secFlrMez == true)
+>>>>>>> feature_ObjGroupingRig
         {
             transform.position = scndflrMez;
             StartTimer = false;
@@ -108,7 +158,17 @@ public class PanoController : MonoBehaviour
         }
 
         //got to third floor mez
+<<<<<<< HEAD
         if (_thrdFlrMez)
+=======
+        if (Input.GetKey(KeyCode.Keypad5))
+        {
+            StartTimer = true;
+            transitionSphr.GetComponent<PanoTransition>().upScale = true;
+            _thrdFlrMez = true;
+        }
+        else if (panoTimer >= transitionTime && _thrdFlrMez == true)
+>>>>>>> feature_ObjGroupingRig
         {
             transform.position = thrdflrMez;
             StartTimer = false;
@@ -119,14 +179,34 @@ public class PanoController : MonoBehaviour
         //go to archives
         if (_archv)
         {
+<<<<<<< HEAD
             transform.position = archives;
+=======
+            StartTimer = true;
+            transitionSphr.GetComponent<PanoTransition>().upScale = true;
+            _archv = true;
+        }
+        else if (panoTimer >= transitionTime && _archv == true)
+        {
+            toArchives();
+>>>>>>> feature_ObjGroupingRig
             StartTimer = false;
             _archv = false;
             panoTimer = 0;
         }
 
         //go to hub lounge
+<<<<<<< HEAD
         if (_hubLng)
+=======
+        if (Input.GetKey(KeyCode.Keypad7))
+        {
+            StartTimer = true;
+            transitionSphr.GetComponent<PanoTransition>().upScale = true;
+            _hubLng = true;
+        }
+        else if (panoTimer >= transitionTime && _hubLng == true)
+>>>>>>> feature_ObjGroupingRig
         {
             transform.position = hub;
             StartTimer = false;
@@ -137,14 +217,34 @@ public class PanoController : MonoBehaviour
         //go to theatre mez
         if (_theatreMez)
         {
+<<<<<<< HEAD
             transform.position = thtrMez;
+=======
+            StartTimer = true;
+            transitionSphr.GetComponent<PanoTransition>().upScale = true;
+            _theatreMez = true;
+        }
+        else if (panoTimer >= transitionTime && _theatreMez == true)
+        {
+            toThtrMez();
+>>>>>>> feature_ObjGroupingRig
             StartTimer = false;
             _theatreMez = false;
             panoTimer = 0;
         }
 
         //go to theatre stage
+<<<<<<< HEAD
         if (_theatreStg)
+=======
+        if (Input.GetKey(KeyCode.Keypad9))
+        {
+            StartTimer = true;
+            transitionSphr.GetComponent<PanoTransition>().upScale = true;
+            _theatreStg = true;
+        }
+        else if (panoTimer >= transitionTime && _theatreStg == true)
+>>>>>>> feature_ObjGroupingRig
         {
             transform.position = thtrStg;
             StartTimer = false;
