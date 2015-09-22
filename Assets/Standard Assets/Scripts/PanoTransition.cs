@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class PanoTransition : MonoBehaviour
 {
@@ -17,11 +16,15 @@ public class PanoTransition : MonoBehaviour
     private Vector3 v1;
     private Vector3 v2;
 
+    private Animator anim;
+
     // Use this for initialization
     void Start()
     {
         v1 = gameObject.transform.localScale;
         v2 = v3Scale;
+
+        anim = GetComponent<Animator>();
 
         //downScale = true;
     }
@@ -32,10 +35,12 @@ public class PanoTransition : MonoBehaviour
         if (downScale == true)
         {
             ScaleDown();
+            anim.SetBool("Animate", true);
         }
         else if (upScale == true)
         {
             ScaleUp();
+            anim.SetBool("Animate", true);
         }
 
         v1 = gameObject.transform.localScale;
@@ -58,6 +63,7 @@ public class PanoTransition : MonoBehaviour
         {
             downScale = false;
             dif = 0f;
+            anim.SetBool("Animate", false);
         }
     }
 

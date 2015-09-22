@@ -348,7 +348,7 @@ MonoBehaviour:
   tooltipGameObject: {fileID: 100004}
   ReplacementSprite: {fileID: 21300022, guid: 362583b388b8c1d4c8bf2bb118d3524b, type: 3}
   oneTimeUse: 0
-  resetOnActivate: 0
+  resetOnActivate: 1
   timeToActivate: 1
   timeToDeactivate: 1
   waitTime: 1
@@ -540,7 +540,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300004, guid: 362583b388b8c1d4c8bf2bb118d3524b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 44c5f6c5c10b32e43afa6650150a5054, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21200014
 SpriteRenderer:
@@ -578,8 +578,32 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300004, guid: 362583b388b8c1d4c8bf2bb118d3524b,
+      objectReference: {fileID: 21300000, guid: 44c5f6c5c10b32e43afa6650150a5054,
         type: 3}
+    - target: {fileID: 0}
+      propertyPath: oneTimeUse
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: resetOnActivate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: changeColorOnHover
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: newColorOnHover.r
+      value: .757352948
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: newColorOnHover.g
+      value: .116944224
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: newColorOnHover.b
+      value: .116944224
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100018}
