@@ -15,7 +15,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &100002
 GameObject:
   m_ObjectHideFlags: 1
@@ -345,7 +345,7 @@ MonoBehaviour:
   newColorOnHover: {r: 0, g: 0, b: 0, a: 0}
   rotateObjectWithCamera: 0
   rotateTooltipAndTimerOnHover: 0
-  tooltipGameObject: {fileID: 100004}
+  tooltipGameObject: {fileID: 100000, guid: d31c5daebcab3134fab3adac3fe210d1, type: 2}
   ReplacementSprite: {fileID: 21300022, guid: 362583b388b8c1d4c8bf2bb118d3524b, type: 3}
   oneTimeUse: 0
   resetOnActivate: 1
@@ -385,7 +385,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300008, guid: 7dd3afa65d872124d9e77a51b8210e03, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21200002
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -410,7 +410,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300006, guid: 7dd3afa65d872124d9e77a51b8210e03, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7dd3afa65d872124d9e77a51b8210e03, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21200004
 SpriteRenderer:
@@ -540,7 +540,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 44c5f6c5c10b32e43afa6650150a5054, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b60f87ed6f6498849be644c33e33137e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21200014
 SpriteRenderer:
@@ -578,7 +578,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 44c5f6c5c10b32e43afa6650150a5054,
+      objectReference: {fileID: 21300000, guid: b60f87ed6f6498849be644c33e33137e,
         type: 3}
     - target: {fileID: 0}
       propertyPath: oneTimeUse
@@ -604,6 +604,10 @@ Prefab:
       propertyPath: newColorOnHover.b
       value: .116944224
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: tooltipGameObject
+      value: 
+      objectReference: {fileID: 100000, guid: d31c5daebcab3134fab3adac3fe210d1, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100018}

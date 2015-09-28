@@ -56,7 +56,7 @@ public class PanoController : MonoBehaviour
         if (StartTimer)
         {
             panoTimer += Time.fixedDeltaTime;
-            Debug.Log("panoTimer " + panoTimer);
+            //            Debug.Log("panoTimer " + panoTimer);
         }
     }
 

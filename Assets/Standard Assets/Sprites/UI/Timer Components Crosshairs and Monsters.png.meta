@@ -1,23 +1,21 @@
 fileFormatVersion: 2
-guid: e356e05695cb03a488f2cc156d231385
-timeCreated: 1443033791
-licenseType: Free
+guid: 7dd3afa65d872124d9e77a51b8210e03
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Timer Components Crosshairs and Monsters_0
-    21300002: Timer Components Crosshairs and Monsters_1
-    21300004: Timer Components Crosshairs and Monsters_2
-    21300006: Timer Components Crosshairs and Monsters_3
-    21300008: Timer Components Crosshairs and Monsters_4
-    21300010: Timer Components Crosshairs and Monsters_5
-    21300012: Timer Components Crosshairs and Monsters_6
-    21300014: Timer Components Crosshairs and Monsters_7
-    21300016: Timer Components Crosshairs and Monsters_8
-    21300018: Timer Components Crosshairs and Monsters_9
+    21300000: RadialFill_White
+    21300002: RadialFillBG_Full_Tintable
+    21300004: Monster
+    21300006: RadialFill_Yellow
+    21300008: RadialFillBG_Thin_Tintable
+    21300010: Monster Hit
+    21300012: TimerBarFill_Tintable
+    21300014: Crosshair_Dot
+    21300016: Monster Kill
+    21300018: Crosshair
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -40,7 +38,7 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: 16
+    aniso: 1
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -59,7 +57,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Timer Components Crosshairs and Monsters_0
+    - name: RadialFill_White
       rect:
         serializedVersion: 2
         x: 0
@@ -69,17 +67,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Timer Components Crosshairs and Monsters_1
+    - name: RadialFillBG_Full_Tintable
       rect:
         serializedVersion: 2
-        x: 236
-        y: 437
-        width: 218
+        x: 237
+        y: 436
+        width: 217
         height: 218
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Timer Components Crosshairs and Monsters_2
+    - name: Monster
       rect:
         serializedVersion: 2
         x: 467
@@ -87,19 +85,19 @@ TextureImporter:
         width: 199
         height: 188
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Timer Components Crosshairs and Monsters_3
+    - name: RadialFill_Yellow
       rect:
         serializedVersion: 2
-        x: 0
+        x: 3
         y: 199
-        width: 216
+        width: 213
         height: 216
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Timer Components Crosshairs and Monsters_4
+    - name: RadialFillBG_Thin_Tintable
       rect:
         serializedVersion: 2
         x: 237
@@ -107,9 +105,9 @@ TextureImporter:
         width: 216
         height: 216
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Timer Components Crosshairs and Monsters_5
+    - name: Monster Hit
       rect:
         serializedVersion: 2
         x: 476
@@ -117,19 +115,19 @@ TextureImporter:
         width: 199
         height: 188
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Timer Components Crosshairs and Monsters_6
+    - name: TimerBarFill_Tintable
       rect:
         serializedVersion: 2
-        x: 37
+        x: 38
         y: 95
-        width: 250
+        width: 249
         height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 4
+      pivot: {x: 0, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Timer Components Crosshairs and Monsters_7
+    - name: Crosshair_Dot
       rect:
         serializedVersion: 2
         x: 366
@@ -137,9 +135,9 @@ TextureImporter:
         width: 14
         height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Timer Components Crosshairs and Monsters_8
+    - name: Monster Kill
       rect:
         serializedVersion: 2
         x: 467
@@ -147,9 +145,9 @@ TextureImporter:
         width: 199
         height: 188
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Timer Components Crosshairs and Monsters_9
+    - name: Crosshair
       rect:
         serializedVersion: 2
         x: 365
@@ -157,7 +155,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

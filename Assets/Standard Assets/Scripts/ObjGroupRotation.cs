@@ -25,18 +25,29 @@ public class ObjGroupRotation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.N))
-        {
-            _nextObj = true;
-        }
-        else if (Input.GetKeyUp(KeyCode.B))
-        {
-            _prevObj = true;
-        }
+        //        if (Input.GetKeyUp(KeyCode.N))
+        //        {
+        //            _nextObj = true;
+        //        }
+        //        else if (Input.GetKeyUp(KeyCode.B))
+        //        {
+        //            _prevObj = true;
+        //        }
 
         Next();
         Back();
     }
+
+    public void Left()
+    {
+        _nextObj = true;
+    }
+
+    public void Right()
+    {
+        _prevObj = true;
+    }
+
 
     public void Next()
     {

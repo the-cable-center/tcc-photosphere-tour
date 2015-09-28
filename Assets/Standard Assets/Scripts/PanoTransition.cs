@@ -58,7 +58,7 @@ public class PanoTransition : MonoBehaviour
         }
 
         float dif = Vector3.SqrMagnitude(v1 - v2);
-        print("sqrMagnitude going down: " + dif);
+        //        print("sqrMagnitude going down: " + dif);
         if (dif <= 0.0001f && plyr.GetComponent<PanoController>().panoTimer == 0f)
         {
             downScale = false;
@@ -78,7 +78,7 @@ public class PanoTransition : MonoBehaviour
         }
 
         float dif = Vector3.SqrMagnitude(v1 - v2);
-        print("sqrMagnitude going up: " + dif);
+        //        print("sqrMagnitude going up: " + dif);
         if (dif <= 0.0001f && plyr.GetComponent<PanoController>().panoTimer >= 0.5f)
         {
             upScale = false;
