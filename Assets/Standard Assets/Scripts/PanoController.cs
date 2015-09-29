@@ -3,6 +3,7 @@
 public class PanoController : MonoBehaviour
 {
     public GameObject transitionSphr;
+    public Animator hud;
 
     //timer setup
     public float transitionTime;
@@ -158,6 +159,7 @@ public class PanoController : MonoBehaviour
 
     public void toGH()
     {
+        hud.SetBool("HUDswitch", false);
         StartTimer = true;
         transitionSphr.GetComponent<PanoTransition>().upScale = true;
         _gHall = true;
@@ -165,6 +167,7 @@ public class PanoController : MonoBehaviour
 
     public void toGHstairs()
     {
+        hud.SetBool("HUDswitch", false);
         StartTimer = true;
         transitionSphr.GetComponent<PanoTransition>().upScale = true;
         _gHallStairs = true;

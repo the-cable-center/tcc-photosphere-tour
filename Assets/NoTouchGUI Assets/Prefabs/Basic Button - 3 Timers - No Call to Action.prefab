@@ -608,6 +608,10 @@ Prefab:
       propertyPath: tooltipGameObject
       value: 
       objectReference: {fileID: 100000, guid: d31c5daebcab3134fab3adac3fe210d1, type: 2}
+    - target: {fileID: 0}
+      propertyPath: GameObjectToActivate
+      value: 
+      objectReference: {fileID: 129542, guid: 0a7ca09ff94377c439cfac3a336ba9f3, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100018}

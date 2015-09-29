@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 public class PanoTransition : MonoBehaviour
 {
 
     public GameObject plyr;
+    public Animator hud;
 
     public float maxScale;
     public float minScale;
@@ -41,6 +43,7 @@ public class PanoTransition : MonoBehaviour
         {
             ScaleUp();
             anim.SetBool("Animate", true);
+            hud.SetBool("HUDswitch", false);
         }
 
         v1 = gameObject.transform.localScale;
@@ -61,11 +64,14 @@ public class PanoTransition : MonoBehaviour
         //        print("sqrMagnitude going down: " + dif);
         if (dif <= 0.0001f && plyr.GetComponent<PanoController>().panoTimer == 0f)
         {
+            hud.SetBool("HUDswitch", true);
             downScale = false;
             dif = 0f;
             anim.SetBool("Animate", false);
         }
     }
+
+
 
     void ScaleUp()
     {
@@ -79,7 +85,7 @@ public class PanoTransition : MonoBehaviour
 
         float dif = Vector3.SqrMagnitude(v1 - v2);
         //        print("sqrMagnitude going up: " + dif);
-        if (dif <= 0.0001f && plyr.GetComponent<PanoController>().panoTimer >= 0.5f)
+        if (dif <= 0.0001f && plyr.GetComponent<PanoController>().panoTimer >= 0.75f)
         {
             upScale = false;
             dif = 0f;
