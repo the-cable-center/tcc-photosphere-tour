@@ -1,7 +1,27 @@
 fileFormatVersion: 2
 guid: ebf515194bb7f0341a555c2acc7a93a0
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Banner - Simple Button Timer Styles
+    21300002: 'Banners - Control '
+    21300004: Banners - How It Works
+    21300006: Banners - Other Cool Stuff
+    21300008: Banners - One Time Use
+    21300010: Tooltip - Call Function
+    21300012: Tooltip - About Turret
+    21300014: Tooltip - Flip Switch
+    21300016: Tooltip - Horiz Timer
+    21300018: Tooltip - Features
+    21300020: Tooltip - Vertical Timer
+    21300022: Tooltip - Enter the Turret
+    21300024: Tooltip - Ammo Clip
+    21300026: Tooltip - Circular Timer
+    21300028: Tooltip - Menu Sample
+    21300030: Tooltip - Pick Up Weapon
+    21300032: Tooltip - Activate Door
+    21300034: Tooltip - Char Control
+    21300036: Tooltip - Keypad Example
+    21300038: Tooltip - What's Possible
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -35,6 +55,7 @@ TextureImporter:
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1

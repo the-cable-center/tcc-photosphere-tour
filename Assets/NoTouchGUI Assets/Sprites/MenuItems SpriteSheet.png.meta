@@ -1,7 +1,33 @@
 fileFormatVersion: 2
 guid: d866145a2b9739d46b38c42558082b6b
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: MenuItems AutoAim On
+    21300002: MenuItems AutoAim OFF
+    21300004: MenuItems About
+    21300006: MenuItems Difficulty
+    21300008: MenuItems Easy
+    21300010: MenuItems Challenging
+    21300012: MenuItems Difficulty DropDown
+    21300014: MenuItems Insane
+    21300016: MenuItems Music ON
+    21300018: MenuItems Music OFF
+    21300020: MenuItems Tough
+    21300022: MenuItems Options DropDown
+    21300024: MenuItems Fantastic
+    21300026: MenuItems Quality DropDown
+    21300028: MenuItems Play
+    21300030: MenuItems High
+    21300032: MenuItems Quit
+    21300034: MenuItems Medium
+    21300036: MenuItems Low
+    21300038: MenuItems Sound OFF
+    21300040: MenuItems SFX ON
+    21300042: MenuItems SFX OFF
+    21300044: MenuItems Sound ON
+    21300046: MenuItems BACK
+    21300048: MenuItems Options
+    21300050: MenuItems Save And Close
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -35,6 +61,7 @@ TextureImporter:
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1

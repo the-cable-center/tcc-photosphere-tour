@@ -1,7 +1,28 @@
 fileFormatVersion: 2
 guid: e0ea704fe17a2f3468a5f45fbc4c4861
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: keypadSpriteSheet_0
+    21300002: keypadSpriteSheet_0_input
+    21300004: keypadSpriteSheet_1
+    21300006: keypadSpriteSheet_1_input
+    21300008: keypadSpriteSheet_2
+    21300010: keypadSpriteSheet_2_input
+    21300012: keypadSpriteSheet_3
+    21300014: keypadSpriteSheet_3_input
+    21300016: keypadSpriteSheet_4
+    21300018: keypadSpriteSheet_4_input
+    21300020: keypadSpriteSheet_5
+    21300022: keypadSpriteSheet_5_input
+    21300024: keypadSpriteSheet_6
+    21300026: keypadSpriteSheet_6_input
+    21300028: keypadSpriteSheet_7
+    21300030: keypadSpriteSheet_7_input
+    21300032: keypadSpriteSheet_8
+    21300034: keypadSpriteSheet_8_input
+    21300036: keypadSpriteSheet_9
+    21300038: keypadSpriteSheet_9_input
+    21300040: keypadSpriteSheet_blank_input
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -35,6 +56,7 @@ TextureImporter:
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1

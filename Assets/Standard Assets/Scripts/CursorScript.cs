@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class CursorScript : MonoBehaviour
 {
+
 
     CursorLockMode wantedMode;
 
@@ -14,6 +14,13 @@ public class CursorScript : MonoBehaviour
         Cursor.visible = (CursorLockMode.Locked != wantedMode);
     }
 
+    void Start()
+    {
+        wantedMode = CursorLockMode.Locked;
+        SetCursorState();
+    }
+
+    /*
     void OnGUI()
     {
         GUILayout.BeginVertical();
@@ -50,5 +57,5 @@ public class CursorScript : MonoBehaviour
 
         SetCursorState();
     }
-
+*/
 }
