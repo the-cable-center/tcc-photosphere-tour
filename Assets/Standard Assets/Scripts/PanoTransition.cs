@@ -10,9 +10,11 @@ public class PanoTransition : MonoBehaviour
     public float maxScale;
     public float minScale;
     public float scaleSpeed;
+    public float waitTime;
     public bool downScale;
     public bool upScale;
 
+    private float timer;
     private float targetScale;
     private Vector3 v3Scale;
     private Vector3 v1;
@@ -41,9 +43,13 @@ public class PanoTransition : MonoBehaviour
         }
         else if (upScale == true)
         {
+            timer += Time.deltaTime;
+        }
+
+        if (timer >= waitTime)
+        {
             ScaleUp();
             anim.SetBool("Animate", true);
-            hud.SetBool("HUDswitch", false);
         }
 
         v1 = gameObject.transform.localScale;
@@ -85,7 +91,7 @@ public class PanoTransition : MonoBehaviour
 
         float dif = Vector3.SqrMagnitude(v1 - v2);
         //        print("sqrMagnitude going up: " + dif);
-        if (dif <= 0.0001f && plyr.GetComponent<PanoController>().panoTimer >= 0.75f)
+        if (dif <= 0.0001f && plyr.GetComponent<PanoController>().panoTimer >= 0.5f)
         {
             upScale = false;
             dif = 0f;

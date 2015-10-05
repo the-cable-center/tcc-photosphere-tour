@@ -163,6 +163,7 @@ public class PanoController : MonoBehaviour
         StartTimer = true;
         transitionSphr.GetComponent<PanoTransition>().upScale = true;
         _gHall = true;
+        hud.SetBool("HUDswitch", false);
     }
 
     public void toGHstairs()
@@ -171,6 +172,7 @@ public class PanoController : MonoBehaviour
         StartTimer = true;
         transitionSphr.GetComponent<PanoTransition>().upScale = true;
         _gHallStairs = true;
+        hud.SetBool("HUDswitch", false);
     }
 
     public void toCHOF()
@@ -178,6 +180,7 @@ public class PanoController : MonoBehaviour
         StartTimer = true;
         transitionSphr.GetComponent<PanoTransition>().upScale = true;
         _chof = true;
+        hud.SetBool("HUDswitch", false);
     }
 
     public void toBarcoLib()
@@ -185,6 +188,7 @@ public class PanoController : MonoBehaviour
         StartTimer = true;
         transitionSphr.GetComponent<PanoTransition>().upScale = true;
         _bLib = true;
+        hud.SetBool("HUDswitch", false);
     }
 
     public void toScndflrMez()
@@ -192,6 +196,7 @@ public class PanoController : MonoBehaviour
         StartTimer = true;
         transitionSphr.GetComponent<PanoTransition>().upScale = true;
         _secFlrMez = true;
+        hud.SetBool("HUDswitch", false);
     }
 
     public void toThrdflrMez()
@@ -199,6 +204,7 @@ public class PanoController : MonoBehaviour
         StartTimer = true;
         transitionSphr.GetComponent<PanoTransition>().upScale = true;
         _thrdFlrMez = true;
+        hud.SetBool("HUDswitch", false);
     }
 
     public void toArchives()
@@ -206,6 +212,7 @@ public class PanoController : MonoBehaviour
         StartTimer = true;
         transitionSphr.GetComponent<PanoTransition>().upScale = true;
         _archv = true;
+        hud.SetBool("HUDswitch", false);
     }
 
     public void toHub()
@@ -213,6 +220,7 @@ public class PanoController : MonoBehaviour
         StartTimer = true;
         transitionSphr.GetComponent<PanoTransition>().upScale = true;
         _hubLng = true;
+        hud.SetBool("HUDswitch", false);
     }
 
     public void toThtrMez()
@@ -220,6 +228,7 @@ public class PanoController : MonoBehaviour
         StartTimer = true;
         transitionSphr.GetComponent<PanoTransition>().upScale = true;
         _theatreMez = true;
+        hud.SetBool("HUDswitch", false);
     }
 
     public void toThtrStg()
@@ -227,6 +236,7 @@ public class PanoController : MonoBehaviour
         StartTimer = true;
         transitionSphr.GetComponent<PanoTransition>().upScale = true;
         _theatreStg = true;
+        hud.SetBool("HUDswitch", false);
     }
 
 }

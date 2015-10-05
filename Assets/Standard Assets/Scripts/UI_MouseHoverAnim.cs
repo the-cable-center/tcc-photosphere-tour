@@ -37,5 +37,17 @@ public class UI_MouseHoverAnim : MonoBehaviour
             anim.SetBool("mouseOver", false);
         }
 
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (VRmouse.GetComponent<VRmouse>().hoverHit.collider != null && VRmouse.GetComponent<VRmouse>().clickHit.collider.tag == "Selected")
+            {
+                anim.SetBool("mouseClick", true);
+            }
+        }
+        else if (Input.GetMouseButtonUp(0))
+        {
+            anim.SetBool("mouseClick", false);
+        }
+
     }
 }
