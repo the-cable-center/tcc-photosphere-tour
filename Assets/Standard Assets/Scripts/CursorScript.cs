@@ -14,7 +14,7 @@ public class CursorScript : MonoBehaviour
         Cursor.visible = (CursorLockMode.Locked != wantedMode);
     }
 
-    void Start()
+    void Update()
     {
         wantedMode = CursorLockMode.Locked;
         SetCursorState();

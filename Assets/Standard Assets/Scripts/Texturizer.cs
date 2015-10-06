@@ -64,6 +64,7 @@ public class Texturizer : MonoBehaviour
         yield return hubLnge;
 
         transitionSphr.GetComponent<PanoTransition>().downScale = true;
+        gameObject.GetComponent<IntroScript>().StartFlyby();
 
         //check for errors - if none apply texture
         //archives

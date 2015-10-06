@@ -52,7 +52,6 @@ public class PanoTransition : MonoBehaviour
             anim.SetBool("Animate", true);
             cam.GetComponent<MouseLook>().enabled = false;
             plyr.GetComponent<MouseLook>().enabled = false;
-
         }
 
         v1 = gameObject.transform.localScale;
@@ -73,9 +72,9 @@ public class PanoTransition : MonoBehaviour
         //        print("sqrMagnitude going down: " + dif);
         if (dif <= 0.0001f && plyr.GetComponent<PanoController>().panoTimer == 0f)
         {
+            hud.SetBool("HUDswitch", true);
             cam.GetComponent<MouseLook>().enabled = true;
             plyr.GetComponent<MouseLook>().enabled = true;
-            hud.SetBool("HUDswitch", true);
             downScale = false;
             dif = 0f;
             anim.SetBool("Animate", false);
@@ -94,13 +93,13 @@ public class PanoTransition : MonoBehaviour
             gameObject.transform.localScale = Vector3.Lerp(gameObject.transform.localScale, v3Scale, Time.deltaTime * scaleSpeed);
         }
 
-        float dif = Vector3.SqrMagnitude(v1 - v2);
+        float UPdif = Vector3.SqrMagnitude(v1 - v2);
         //        print("sqrMagnitude going up: " + dif);
-        if (dif <= 0.0001f && plyr.GetComponent<PanoController>().panoTimer >= 0.5f)
+        if (UPdif <= 0.0001f && plyr.GetComponent<PanoController>().panoTimer >= 1f)
         {
             upScale = false;
             timer = 0;
-            dif = 0f;
+            UPdif = 0f;
             downScale = true;
         }
     }

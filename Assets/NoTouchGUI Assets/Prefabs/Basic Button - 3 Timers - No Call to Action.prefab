@@ -322,7 +322,7 @@ MonoBehaviour:
   resetOnActivate: 1
   timeToActivate: 1
   timeToDeactivate: 1
-  waitTime: 1
+  waitTime: 4
   CallFunctionOnActivate: 
   GameObjectToActivate: {fileID: 0}
   CallFunctionOnDeactivate: 
@@ -560,6 +560,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: CallFunctionOnActivate
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: waitTime
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
