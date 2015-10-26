@@ -1,0 +1,99 @@
+fileFormatVersion: 2
+guid: 9f499efe51214064fbc2ab07d46202e1
+timeCreated: 1438023848
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Model_LightAnim-01_0
+    21300002: Model_LightAnim-01_1
+    21300004: Model_LightAnim-01_2
+    21300006: Model_LightAnim-01_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 72
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Model_LightAnim-01_0
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 2127
+        width: 1098
+        height: 29
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Model_LightAnim-01_1
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 2127
+        width: 1098
+        height: 348
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Model_LightAnim-01_2
+      rect:
+        serializedVersion: 2
+        x: 2939
+        y: 2127
+        width: 1098
+        height: 641
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Model_LightAnim-01_3
+      rect:
+        serializedVersion: 2
+        x: 4475
+        y: 2127
+        width: 2011
+        height: 1191
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

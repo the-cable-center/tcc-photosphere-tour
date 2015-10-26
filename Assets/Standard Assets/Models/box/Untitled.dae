@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<COLLADA version="1.4.0" xmlns="http://www.collada.org/2005/11/COLLADASchema">
+  <asset>
+    <contributor>
+      <authoring_tool>VideoTrace</authoring_tool>
+      <source_data>file://memory</source_data>
+    </contributor>
+    <created>2015-10-14T22:04:29Z</created>
+    <modified>2015-10-14T22:04:29Z</modified>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="Untitled-tex-0">
+      <init_from>Untitled-tex-0.png</init_from>
+    </image>
+    <image id="Untitled-tex-1">
+      <init_from>Untitled-tex-1.png</init_from>
+    </image>
+    <image id="Untitled-tex-2">
+      <init_from>Untitled-tex-2.png</init_from>
+    </image>
+    <image id="Untitled-tex-3">
+      <init_from>Untitled-tex-3.png</init_from>
+    </image>
+  </library_images>
+  <library_effects>
+    <effect id="Untitled-tex-0_fx">
+      <profile_COMMON>
+        <newparam sid="Untitled-tex-0_surf">
+          <surface type="2D">
+            <init_from>Untitled-tex-0</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Untitled-tex-0_samp">
+          <sampler2D>
+            <source>Untitled-tex-0_surf</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="Untitled-tex-0_tech">
+          <phong>
+            <diffuse>
+              <texture texture="Untitled-tex-0_samp" texcoord="UVSET0"/>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Untitled-tex-1_fx">
+      <profile_COMMON>
+        <newparam sid="Untitled-tex-1_surf">
+          <surface type="2D">
+            <init_from>Untitled-tex-1</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Untitled-tex-1_samp">
+          <sampler2D>
+            <source>Untitled-tex-1_surf</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="Untitled-tex-1_tech">
+          <phong>
+            <diffuse>
+              <texture texture="Untitled-tex-1_samp" texcoord="UVSET0"/>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Untitled-tex-2_fx">
+      <profile_COMMON>
+        <newparam sid="Untitled-tex-2_surf">
+          <surface type="2D">
+            <init_from>Untitled-tex-2</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Untitled-tex-2_samp">
+          <sampler2D>
+            <source>Untitled-tex-2_surf</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="Untitled-tex-2_tech">
+          <phong>
+            <diffuse>
+              <texture texture="Untitled-tex-2_samp" texcoord="UVSET0"/>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Untitled-tex-3_fx">
+      <profile_COMMON>
+        <newparam sid="Untitled-tex-3_surf">
+          <surface type="2D">
+            <init_from>Untitled-tex-3</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Untitled-tex-3_samp">
+          <sampler2D>
+            <source>Untitled-tex-3_surf</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="Untitled-tex-3_tech">
+          <phong>
+            <diffuse>
+              <texture texture="Untitled-tex-3_samp" texcoord="UVSET0"/>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="Untitled-tex-0_material">
+      <instance_effect url="#Untitled-tex-0_fx"/>
+    </material>
+    <material id="Untitled-tex-1_material">
+      <instance_effect url="#Untitled-tex-1_fx"/>
+    </material>
+    <material id="Untitled-tex-2_material">
+      <instance_effect url="#Untitled-tex-2_fx"/>
+    </material>
+    <material id="Untitled-tex-3_material">
+      <instance_effect url="#Untitled-tex-3_fx"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="body0-surf0_geo">
+      <mesh>
+        <source id="body0-surf0_geo_pos">
+          <float_array id="body0-surf0_geo_pos_arr" count="12">
+            -0.00295598 0.0493348 -0.181468
+            -0.0206214 -0.186055 -0.202056
+            -0.34026 -0.215259 0.553672
+            -0.321189 0.0254564 0.570028
+          </float_array>
+          <technique_common>
+            <accessor source="#body0-surf0_geo_pos_arr" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="body0-surf0_geo_uvs">
+          <float_array id="body0-surf0_geo_uvs_arr" count="12">
+            0.00195503 0.71202
+            0.0302584 0.997067
+            0.998045 0.900262
+            0.975895 0.61949
+            0.00195503 0.71202
+            0.998045 0.900262
+          </float_array>
+          <technique_common>
+            <accessor source="#body0-surf0_geo_uvs_arr" count="6" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="body0-surf0_geo_vtx">
+          <input semantic="POSITION" source="#body0-surf0_geo_pos"/>
+        </vertices>
+        <triangles count="2" material="Untitled-tex-0_geomat">
+          <input semantic="VERTEX" source="#body0-surf0_geo_vtx" offset="0"/>
+          <input semantic="TEXCOORD" source="#body0-surf0_geo_uvs" offset="1" set="0"/>
+          <p>
+            0 0 1 1 2 2 
+            3 3 0 4 2 5 
+          </p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="body0-surf1_geo">
+      <mesh>
+        <source id="body0-surf1_geo_pos">
+          <float_array id="body0-surf1_geo_pos_arr" count="12">
+            0.405007 0.0157683 0.00118824
+            0.100328 -0.0144482 0.733778
+            0.0900211 -0.238362 0.716855
+            0.390777 -0.209635 -0.0174979
+          </float_array>
+          <technique_common>
+            <accessor source="#body0-surf1_geo_pos_arr" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="body0-surf1_geo_uvs">
+          <float_array id="body0-surf1_geo_uvs_arr" count="12">
+            0.924914 0.366356
+            0.0114997 0.275274
+            0.00195503 0.536551
+            0.888504 0.614858
+            0.924914 0.366356
+            0.00195503 0.536551
+          </float_array>
+          <technique_common>
+            <accessor source="#body0-surf1_geo_uvs_arr" count="6" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="body0-surf1_geo_vtx">
+          <input semantic="POSITION" source="#body0-surf1_geo_pos"/>
+        </vertices>
+        <triangles count="2" material="Untitled-tex-0_geomat">
+          <input semantic="VERTEX" source="#body0-surf1_geo_vtx" offset="0"/>
+          <input semantic="TEXCOORD" source="#body0-surf1_geo_uvs" offset="1" set="0"/>
+          <p>
+            0 0 1 1 2 2 
+            3 3 0 4 2 5 
+          </p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="body0-surf2_geo">
+      <mesh>
+        <source id="body0-surf2_geo_pos">
+          <float_array id="body0-surf2_geo_pos_arr" count="12">
+            -0.00295598 0.0493348 -0.181468
+            0.405007 0.0157683 0.00118824
+            0.390777 -0.209635 -0.0174979
+            -0.0206214 -0.186055 -0.202056
+          </float_array>
+          <technique_common>
+            <accessor source="#body0-surf2_geo_pos_arr" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="body0-surf2_geo_uvs">
+          <float_array id="body0-surf2_geo_uvs_arr" count="12">
+            0.612136 0.816644
+            0.569118 0.49973
+            0.00195503 0.57417
+            0.0799802 0.997067
+            0.612136 0.816644
+            0.00195503 0.57417
+          </float_array>
+          <technique_common>
+            <accessor source="#body0-surf2_geo_uvs_arr" count="6" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="body0-surf2_geo_vtx">
+          <input semantic="POSITION" source="#body0-surf2_geo_pos"/>
+        </vertices>
+        <triangles count="2" material="Untitled-tex-1_geomat">
+          <input semantic="VERTEX" source="#body0-surf2_geo_vtx" offset="0"/>
+          <input semantic="TEXCOORD" source="#body0-surf2_geo_uvs" offset="1" set="0"/>
+          <p>
+            3 0 0 1 1 2 
+            2 3 3 4 1 5 
+          </p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="body0-surf3_geo">
+      <mesh>
+        <source id="body0-surf3_geo_pos">
+          <float_array id="body0-surf3_geo_pos_arr" count="12">
+            -0.0206214 -0.186055 -0.202056
+            0.390777 -0.209635 -0.0174979
+            0.0900211 -0.238362 0.716855
+            -0.34026 -0.215259 0.553672
+          </float_array>
+          <technique_common>
+            <accessor source="#body0-surf3_geo_pos_arr" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="body0-surf3_geo_vtx">
+          <input semantic="POSITION" source="#body0-surf3_geo_pos"/>
+        </vertices>
+        <triangles count="2">
+          <input semantic="VERTEX" source="#body0-surf3_geo_vtx" offset="0"/>
+          <p>
+            3 0 1 
+            2 3 1 
+          </p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="body0-surf4_geo">
+      <mesh>
+        <source id="body0-surf4_geo_pos">
+          <float_array id="body0-surf4_geo_pos_arr" count="12">
+            -0.34026 -0.215259 0.553672
+            0.0900211 -0.238362 0.716855
+            0.100328 -0.0144482 0.733778
+            -0.321189 0.0254564 0.570028
+          </float_array>
+          <technique_common>
+            <accessor source="#body0-surf4_geo_pos_arr" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="body0-surf4_geo_uvs">
+          <float_array id="body0-surf4_geo_uvs_arr" count="12">
+            0.00391389 0.763114
+            0.793648 0.994129
+            0.882967 0.403968
+            0.0710418 0.280472
+            0.00391389 0.763114
+            0.882967 0.403968
+          </float_array>
+          <technique_common>
+            <accessor source="#body0-surf4_geo_uvs_arr" count="6" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="body0-surf4_geo_vtx">
+          <input semantic="POSITION" source="#body0-surf4_geo_pos"/>
+        </vertices>
+        <triangles count="2" material="Untitled-tex-2_geomat">
+          <input semantic="VERTEX" source="#body0-surf4_geo_vtx" offset="0"/>
+          <input semantic="TEXCOORD" source="#body0-surf4_geo_uvs" offset="1" set="0"/>
+          <p>
+            0 0 1 1 2 2 
+            3 3 0 4 2 5 
+          </p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="body0-surf5_geo">
+      <mesh>
+        <source id="body0-surf5_geo_pos">
+          <float_array id="body0-surf5_geo_pos_arr" count="12">
+            -0.321189 0.0254564 0.570028
+            0.100328 -0.0144482 0.733778
+            0.405007 0.0157683 0.00118824
+            -0.00295598 0.0493348 -0.181468
+          </float_array>
+          <technique_common>
+            <accessor source="#body0-surf5_geo_pos_arr" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="body0-surf5_geo_uvs">
+          <float_array id="body0-surf5_geo_uvs_arr" count="12">
+            0.222999 0.709512
+            0.00195503 0.550737
+            0.871925 0.517565
+            0.823991 0.903226
+            0.222999 0.709512
+            0.871925 0.517565
+          </float_array>
+          <technique_common>
+            <accessor source="#body0-surf5_geo_uvs_arr" count="6" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="body0-surf5_geo_vtx">
+          <input semantic="POSITION" source="#body0-surf5_geo_pos"/>
+        </vertices>
+        <triangles count="2" material="Untitled-tex-3_geomat">
+          <input semantic="VERTEX" source="#body0-surf5_geo_vtx" offset="0"/>
+          <input semantic="TEXCOORD" source="#body0-surf5_geo_uvs" offset="1" set="0"/>
+          <p>
+            0 0 1 1 2 2 
+            3 3 0 4 2 5 
+          </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene">
+      <node>
+        <matrix>
+          1 0 0 0 
+          0 1 0 0 
+          0 0 1 0 
+          0 0 0 1 
+        </matrix>
+        <instance_geometry url="#body0-surf0_geo">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Untitled-tex-0_geomat" target="#Untitled-tex-0_material">
+                <bind_vertex_input semantic="UVSET0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <instance_geometry url="#body0-surf1_geo">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Untitled-tex-0_geomat" target="#Untitled-tex-0_material">
+                <bind_vertex_input semantic="UVSET0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <instance_geometry url="#body0-surf2_geo">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Untitled-tex-1_geomat" target="#Untitled-tex-1_material">
+                <bind_vertex_input semantic="UVSET0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <instance_geometry url="#body0-surf3_geo"/>
+        <instance_geometry url="#body0-surf4_geo">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Untitled-tex-2_geomat" target="#Untitled-tex-2_material">
+                <bind_vertex_input semantic="UVSET0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <instance_geometry url="#body0-surf5_geo">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Untitled-tex-3_geomat" target="#Untitled-tex-3_material">
+                <bind_vertex_input semantic="UVSET0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
