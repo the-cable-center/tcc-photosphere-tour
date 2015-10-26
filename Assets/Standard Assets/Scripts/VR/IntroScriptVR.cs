@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class IntroScriptVR : MonoBehaviour
 {
@@ -7,6 +8,7 @@ public class IntroScriptVR : MonoBehaviour
     public GameObject hud;
     public GameObject cam;
     public GameObject vrMouse;
+    public GameObject instructions;
 
     void Update()
     {
@@ -19,6 +21,8 @@ public class IntroScriptVR : MonoBehaviour
             plyr.GetComponent<Animator>().enabled = false;
 
             gameObject.GetComponent<IntroScriptVR>().enabled = false;
+
+            StartCoroutine(Instructions());
         }
     }
 
@@ -26,6 +30,15 @@ public class IntroScriptVR : MonoBehaviour
     {
         plyr.GetComponent<Animator>().SetBool("flyby", true);
         hud.GetComponent<Animator>().enabled = false;
+    }
+
+    public IEnumerator Instructions()
+    {
+        WaitForSeconds wait = new WaitForSeconds(2f);
+
+        yield return wait;
+
+        instructions.GetComponent<Animator>().SetBool("showing", false);
     }
 
 }

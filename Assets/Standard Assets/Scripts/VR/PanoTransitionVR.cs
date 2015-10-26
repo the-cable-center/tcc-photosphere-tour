@@ -16,6 +16,9 @@ public class PanoTransitionVR : MonoBehaviour
 
     private float timer;
     private float targetScale;
+    private bool scalingUp;
+    private bool scalingDown;
+
     private Vector3 v3Scale;
     private Vector3 v1;
     private Vector3 v2;
@@ -28,11 +31,11 @@ public class PanoTransitionVR : MonoBehaviour
 
     void Update()
     {
-        if (downScale == true)
+        if (downScale == true && scalingUp == false)
         {
             ScaleDown();
         }
-        else if (upScale == true)
+        else if (upScale == true && scalingDown == false)
         {
             timer += Time.deltaTime;
         }
@@ -48,6 +51,8 @@ public class PanoTransitionVR : MonoBehaviour
 
     void ScaleDown()
     {
+        scalingDown = true;
+
         targetScale = minScale;
         v3Scale = new Vector3(targetScale, targetScale, targetScale);
 
@@ -59,6 +64,7 @@ public class PanoTransitionVR : MonoBehaviour
         float dif = Vector3.SqrMagnitude(v1 - v2);
         if (dif <= 0.0001f && plyr.GetComponent<PanoControllerVR>().panoTimer == 0f)
         {
+            scalingDown = false;
             hud.SetBool("HUDswitch", true);
             downScale = false;
             dif = 0f;
@@ -70,6 +76,8 @@ public class PanoTransitionVR : MonoBehaviour
 
     void ScaleUp()
     {
+        scalingUp = true;
+
         targetScale = maxScale;
         v3Scale = new Vector3(targetScale, targetScale, targetScale);
 
@@ -83,6 +91,7 @@ public class PanoTransitionVR : MonoBehaviour
         float UPdif = Vector3.SqrMagnitude(v1 - v2);
         if (UPdif <= 0.001f && plyr.GetComponent<PanoControllerVR>().panoTimer >= 1f)
         {
+            scalingUp = false;
             upScale = false;
             timer = 0;
             UPdif = 0f;

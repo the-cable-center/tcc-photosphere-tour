@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class PanoControllerVR : MonoBehaviour
 {
     public GameObject transitionSphr;
+    public Text text_UI;
     public Animator hud;
 
     //timer setup
@@ -61,6 +63,7 @@ public class PanoControllerVR : MonoBehaviour
             StartTimer = false;
             _gHall = false;
             panoTimer = 0;
+            text_UI.text = "The Great Hall:";
         }
 
         //go to stairs
@@ -70,6 +73,7 @@ public class PanoControllerVR : MonoBehaviour
             StartTimer = false;
             _gHallStairs = false;
             panoTimer = 0;
+            text_UI.text = "The Great Hall:\nStairs";
         }
 
         //go to chof
@@ -79,6 +83,7 @@ public class PanoControllerVR : MonoBehaviour
             StartTimer = false;
             _chof = false;
             panoTimer = 0;
+            text_UI.text = "The Great Hall:\nCable Hall of Fame";
         }
 
         //go to barco library
@@ -88,6 +93,7 @@ public class PanoControllerVR : MonoBehaviour
             StartTimer = false;
             _bLib = false;
             panoTimer = 0;
+            text_UI.text = "The Barco Library";
         }
 
         //go to second floor mez
@@ -97,6 +103,7 @@ public class PanoControllerVR : MonoBehaviour
             StartTimer = false;
             _secFlrMez = false;
             panoTimer = 0;
+            text_UI.text = "The Great Hall:\nSecond Floor Mezzanine";
         }
 
         //got to third floor mez
@@ -106,6 +113,7 @@ public class PanoControllerVR : MonoBehaviour
             StartTimer = false;
             _thrdFlrMez = false;
             panoTimer = 0;
+            text_UI.text = "The Great Hall:\nThird Floor Mezzanine";
         }
 
         //go to archives
@@ -115,6 +123,7 @@ public class PanoControllerVR : MonoBehaviour
             StartTimer = false;
             _archv = false;
             panoTimer = 0;
+            text_UI.text = "The Archives";
         }
 
         //go to hub lounge
@@ -124,6 +133,7 @@ public class PanoControllerVR : MonoBehaviour
             StartTimer = false;
             _hubLng = false;
             panoTimer = 0;
+            text_UI.text = "The Hub Lounge";
         }
 
         //go to theatre mez
@@ -133,6 +143,7 @@ public class PanoControllerVR : MonoBehaviour
             StartTimer = false;
             _theatreMez = false;
             panoTimer = 0;
+            text_UI.text = "The Malone Theatre:\nMezzanine";
         }
 
         //go to theatre stage
@@ -142,7 +153,7 @@ public class PanoControllerVR : MonoBehaviour
             StartTimer = false;
             _theatreStg = false;
             panoTimer = 0;
-
+            text_UI.text = "The Malone Theatre:\nMezzanine";
         }
 
     }
